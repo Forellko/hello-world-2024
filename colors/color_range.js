@@ -14,6 +14,6 @@ const changeColor = () => {
 };
 changeColor();
 
-redChange.addEventListener('change', changeColor);
-greenChange.addEventListener('change', changeColor);
-blueChange.addEventListener('change', changeColor);
+redChange.addEventListener('input', changeColor);
+greenChange.addEventListener('input', changeColor);
+blueChange.addEventListener('input', changeColor);
