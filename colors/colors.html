@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div style="display: flex">
@@ -32,6 +38,21 @@
       <div style="background-color: #00ffff; width: 100px; height: 100px"></div>
       <div style="background-color: #ff00ff; width: 100px; height: 100px"></div>
     </div>
-    <!-- <input type="range" name="color-range" id="color-range" /> -->
+    <hr />
+    <div
+      style="
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+      "
+      id="color-block"
+    ></div>
+    <input type="range" name="red-range" id="red-range" max="255" min="0" />
+    <input type="range" name="green-range" id="green-range" max="255" min="0" />
+    <input type="range" name="blue-range" id="blue-range" max="255" min="0" />
+    <script src="color_range.js"></script>
   </body>
 </html>
