@@ -6,10 +6,17 @@
     <title>Document</title>
   </head>
   <body>
-    <img src="arts/ahri<3.jpeg" alt="ahri" />
-    <img src="arts/aww.jpeg" alt="aww" />
-    <img src="arts/awww.jpeg" alt="awww" />
-    <img src="arts/Simply_beautiful.jpeg" alt="simply beautiful" />
-    <img src="arts/swim.jpeg" alt="swim" />
+    <picture>
+      <source media="(max-width: 1000px)" srcset="arts/aww.jpeg" />
+      <img src="arts/awww.jpeg" alt="simply beautiful" />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 1000px)"
+        srcset="./arts/Simply_beautiful.jpeg"
+      />
+      <img src="./arts/swim.jpeg" alt="girl" />
+    </picture>
+    <img src="./arts/ears.jpeg" alt="ears" />
   </body>
 </html>
