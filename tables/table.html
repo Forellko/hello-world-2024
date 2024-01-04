@@ -4,6 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <style>
+      table {
+        background-color: rgb(246, 153, 207);
+      }
+      table,
+      th,
+      td,
+      caption {
+        border: 1px solid green;
+        border-radius: 10px;
+        padding: 30px;
+        border-spacing: 30px;
+        text-align: center;
+      }
+      th {
+        background-color: rgb(247, 157, 157);
+      }
+      caption {
+        background-color: rgb(251, 255, 179);
+      }
+      td:nth-child(even) {
+        background-color: rgb(228, 198, 248);
+      }
+      td:nth-child(odd) {
+        background-color: rgb(201, 189, 246);
+      }
+      td:hover {
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <table>
@@ -11,28 +48,26 @@
         Champions
       </caption>
       <tr>
-        <th>Name</th>
-        <th>Rate</th>
-        <th>Price</th>
-        <th>Game</th>
+        <th colspan="5">Name</th>
+        <th rowspan="3">Rate</th>
       </tr>
       <tr>
         <td>Akali</td>
-        <td>10</td>
+        <td colspan="2">10</td>
         <td>1000</td>
-        <td>League of Legends</td>
+        <td rowspan="3">League of Legends</td>
       </tr>
       <tr>
         <td>Riven</td>
-        <td>10</td>
+        <td rowspan="2">10</td>
         <td>1000</td>
-        <td>League of Legends</td>
+        <td>Legends of Runnetera</td>
       </tr>
       <tr>
-        <td>Zyra</td>
+        <td>Hearstone</td>
         <td>10</td>
         <td>1000</td>
-        <td>League of Legends</td>
+        <td>3</td>
       </tr>
     </table>
   </body>
