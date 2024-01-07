@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form id="form" oninput="x.value = +a.value + +b.value">
+      <label for="a">A</label>
+      <input type="number" name="a" id="a" />
+      +
+      <label for="b">B</label>
+      <input type="number" name="b" id="b" />
+      =
+      <output name="x" for="a b"></output>
+      <br />
+      <br />
+      <input type="submit" name="submit" id="submit" />
+    </form>
+    <script>
+      const form = document.querySelector('#form');
+      form.onsubmit = (event) => {
+        event.preventDefault();
+        console.log(event);
+      };
+    </script>
+  </body>
+</html>
