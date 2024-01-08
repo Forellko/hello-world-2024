@@ -10,6 +10,7 @@
     <canvas id="circle" width="200" height="200"></canvas>
     <canvas id="text" width="200" height="200"></canvas>
     <canvas id="gradient" width="200" height="200"></canvas>
+    <canvas id="circle_gradient" width="200" height="200"></canvas>
     <script>
       // Draw a Line
       const canvasLine = document.querySelector('#line');
@@ -36,10 +37,25 @@
       const ctxGradient = canvasGradient.getContext('2d');
       const gradient = ctxGradient.createLinearGradient(0, 0, 200, 0);
       gradient.addColorStop(0, 'blue');
-      gradient.addColorStop(0.5, 'red');
       gradient.addColorStop(1, 'white');
       ctxGradient.fillStyle = gradient;
       ctxGradient.fillRect(10, 10, 150, 80);
+
+      // Draw Circular Gradient
+      const canvasCircle_gradient = document.querySelector('#circle_gradient');
+      const ctxCircle_gradient = canvasCircle_gradient.getContext('2d');
+      const circle_gradient = ctxCircle_gradient.createRadialGradient(
+        75,
+        50,
+        5,
+        90,
+        60,
+        100
+      );
+      circle_gradient.addColorStop(0, 'red');
+      circle_gradient.addColorStop(1, 'white');
+      ctxCircle_gradient.fillStyle = circle_gradient;
+      ctxCircle_gradient.fillRect(10, 10, 150, 80);
     </script>
   </body>
 </html>
