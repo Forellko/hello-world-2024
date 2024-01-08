@@ -24,11 +24,11 @@
       ctxCircle.arc(95, 100, 90, 0, 2 * Math.PI);
       ctxCircle.stroke();
 
-      // Draw a Text
+      // Draw a Text + Stroke Text
       const canvasText = document.querySelector('#text');
       const ctxText = canvasText.getContext('2d');
       ctxText.font = '30px Arial';
-      ctxText.fillText('Hello World', 10, 50);
+      ctxText.strokeText('Hello World', 10, 50);
     </script>
   </body>
 </html>
