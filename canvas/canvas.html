@@ -8,6 +8,7 @@
   <body>
     <canvas id="line" width="200" height="200"></canvas>
     <canvas id="circle" width="200" height="200"></canvas>
+    <canvas id="text" width="200" height="200"></canvas>
     <script>
       // Draw a Line
       const canvasLine = document.querySelector('#line');
@@ -22,6 +23,12 @@
       ctxCircle.beginPath();
       ctxCircle.arc(95, 100, 90, 0, 2 * Math.PI);
       ctxCircle.stroke();
+
+      // Draw a Text
+      const canvasText = document.querySelector('#text');
+      const ctxText = canvasText.getContext('2d');
+      ctxText.font = '30px Arial';
+      ctxText.fillText('Hello World', 10, 50);
     </script>
   </body>
 </html>
