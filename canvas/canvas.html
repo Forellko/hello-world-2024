@@ -6,13 +6,22 @@
     <title>Canvas</title>
   </head>
   <body>
-    <canvas id="canvas" width="100" height="100"></canvas>
+    <canvas id="line" width="100" height="100"></canvas>
+    <canvas id="circle" width="200" height="200"></canvas>
     <script>
-      const canvas = document.querySelector('#canvas');
-      const ctx = canvas.getContext('2d');
-      ctx.moveTo(0, 0);
-      ctx.lineTo(100, 100);
-      ctx.stroke();
+      // Draw a Line
+      const canvasLine = document.querySelector('#line');
+      const ctxLine = canvasLine.getContext('2d');
+      ctxLine.moveTo(0, 0);
+      ctxLine.lineTo(100, 100);
+      ctxLine.stroke();
+
+      // Draw a Circle
+      const canvasCircle = document.querySelector('#circle');
+      const ctxCircle = canvasCircle.getContext('2d');
+      ctxCircle.beginPath();
+      ctxCircle.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctxCircle.stroke();
     </script>
   </body>
 </html>
