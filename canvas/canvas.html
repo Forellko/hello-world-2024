@@ -9,6 +9,7 @@
     <canvas id="line" width="200" height="200"></canvas>
     <canvas id="circle" width="200" height="200"></canvas>
     <canvas id="text" width="200" height="200"></canvas>
+    <canvas id="gradient" width="200" height="200"></canvas>
     <script>
       // Draw a Line
       const canvasLine = document.querySelector('#line');
@@ -29,6 +30,16 @@
       const ctxText = canvasText.getContext('2d');
       ctxText.font = '30px Arial';
       ctxText.strokeText('Hello World', 10, 50);
+
+      // Draw Linear Gradient
+      const canvasGradient = document.querySelector('#gradient');
+      const ctxGradient = canvasGradient.getContext('2d');
+      const gradient = ctxGradient.createLinearGradient(0, 0, 200, 0);
+      gradient.addColorStop(0, 'blue');
+      gradient.addColorStop(0.5, 'red');
+      gradient.addColorStop(1, 'white');
+      ctxGradient.fillStyle = gradient;
+      ctxGradient.fillRect(10, 10, 150, 80);
     </script>
   </body>
 </html>
