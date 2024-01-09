@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop</title>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData('text', ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData('text');
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <div style="display: flex; height: 600px">
+      <div
+        id="div1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        style="
+          height: 600px;
+          width: 600px;
+          border: 1px solid red;
+          display: flex;
+        "
+      ></div>
+
+      <div
+        id="div2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        style="
+          height: 600px;
+          width: 600px;
+          border: 1px solid blue;
+          display: flex;
+        "
+      ></div>
+    </div>
+
+    <div style="display: flex; height: 600px">
+      <div
+        id="div1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        style="
+          height: 600px;
+          width: 600px;
+          border: 1px solid green;
+          display: flex;
+        "
+      ></div>
+
+      <div
+        id="div2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        style="
+          height: 600px;
+          width: 600px;
+          border: 1px solid yellow;
+          display: flex;
+        "
+      ></div>
+    </div>
+
+    <img id="drag1" src="aww.jpeg" draggable="true" ondragstart="drag(event)" />
+    <img
+      id="drag2"
+      src="awww.jpeg"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+  </body>
+</html>
