@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localstorage</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <button onclick="add()">+ 1</button>
+    <button onclick="dec()">- 1</button>
+    <script>
+      function add() {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = +localStorage.clickcount + 1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.querySelector('#result').innerHTML =
+          'You have clicked ' + localStorage.clickcount;
+      }
+      function dec() {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = +localStorage.clickcount - 1;
+        } else {
+          localStorage.clickcount = 0;
+        }
+        document.querySelector('#result').innerHTML =
+          'You have clicked ' + localStorage.clickcount;
+      }
+      document.querySelector('#result').innerHTML =
+        'You have clicked ' + localStorage.clickcount;
+    </script>
+  </body>
+</html>
