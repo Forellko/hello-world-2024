@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input color</title>
+  </head>
+  <body>
+    <div class="input_color" style="width: 100px; height: 100px"></div>
+    <input type="color" name="color" id="color" />
+    <script>
+      const color = document.querySelector('#color');
+      const input_color = document.querySelector('.input_color');
+      console.log(color);
+      color.oninput = (e) => {
+        input_color.style.backgroundColor = e.target.value;
+      };
+    </script>
+  </body>
+</html>
