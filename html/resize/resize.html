@@ -17,11 +17,13 @@
       range.oninput = (event) => {
         block.style.width = event.target.value + 'px';
         block.style.height = event.target.value + 'px';
-        block.style.backgroundColor = `rgb(${Math.round(
+        block.style.backgroundImage = `linear-gradient(rgb(${Math.round(
           Math.random() * 255
         )},${Math.round(Math.random() * 255)},${Math.round(
           Math.random() * 255
-        )})`;
+        )}), rgb(${Math.round(Math.random() * 255)},${Math.round(
+          Math.random() * 255
+        )},${Math.round(Math.random() * 255)}))`;
       };
     </script>
   </body>
