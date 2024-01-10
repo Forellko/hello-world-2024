@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="color" name="color1" id="color1" style="margin: 10px" />
+    <span>Color 1: </span>
+    <span class="color-name1"></span>
+    <input type="color" name="color2" id="color2" style="margin: 10px" />
+    <span>Color 2: </span>
+    <span class="color-name2"></span>
+    <hr />
+    <div class="block" style="width: 200px; height: 200px" id="block"></div>
+    <script>
+      const color1 = document.querySelector('#color1');
+      const color2 = document.querySelector('#color2');
+      const block = document.querySelector('#block');
+      const colorName1 = document.querySelector('.color-name1');
+      const colorName2 = document.querySelector('.color-name2');
+
+      const inputColor = () => {
+        block.style.backgroundImage = `linear-gradient(${color1.value},${color2.value})`;
+        colorName1.innerHTML = color1.value;
+        colorName2.innerHTML = color2.value;
+      };
+
+      color1.oninput = inputColor;
+      color2.oninput = inputColor;
+    </script>
+  </body>
+</html>
