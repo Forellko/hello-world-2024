@@ -21,4 +21,3 @@ randomButton.onclick = () => {
   image.src = pathArr[rand];
   randomBlock.innerHTML = rand;
 };
-;
