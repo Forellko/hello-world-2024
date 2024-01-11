@@ -16,3 +16,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
