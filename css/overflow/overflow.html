@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overflow</title>
     <style>
+      body {
+        display: flex;
+        justify-content: space-between;
+      }
       .block {
         width: 100px;
         height: 100px;
@@ -13,10 +17,19 @@
         overflow: visible;
         background-color: blue;
       }
+      .overflow-hidden {
+        overflow: hidden;
+        background-color: aqua;
+      }
     </style>
   </head>
   <body>
     <div class="overflow-visible block">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea ducimus,
+      soluta distinctio accusantium accusamus nisi nostrum veritatis quod rerum
+      fugit sed nihil ipsum voluptatibus ratione quos vero quo dicta.
+    </div>
+    <div class="overflow-hidden block">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea ducimus,
       soluta distinctio accusantium accusamus nisi nostrum veritatis quod rerum
       fugit sed nihil ipsum voluptatibus ratione quos vero quo dicta.
