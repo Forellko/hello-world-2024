@@ -20,11 +20,20 @@
         display: inline-block;
         width: 500px;
       }
+      /*The element will be hidden, but still affect the layout*/
+      .visibility-hidden {
+        visibility: hidden;
+      }
+      .display-none {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <div class="display-block">block</div>
     <div class="display-inline">inline</div>
     <div class="display-inline-block">inline-block</div>
+    <div class="visibility-hidden">visibility hidden</div>
+    <div class="display-none">display none</div>
   </body>
 </html>
