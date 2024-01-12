@@ -8,15 +8,23 @@
       .display-block {
         /*ALWAYS starts on a new line and takes up the full width available*/
         display: block;
+        width: 500px;
       }
       .display-inline {
         /*An inline element DOES NOT start on a new line and only takes up as much width as necessary*/
         display: inline;
+        width: 500px;
+      }
+      .display-inline-block {
+        /*The element itself is formatted as an inline element, but you can apply height and width values*/
+        display: inline-block;
+        width: 500px;
       }
     </style>
   </head>
   <body>
     <div class="display-block">block</div>
     <div class="display-inline">inline</div>
+    <div class="display-inline-block">inline-block</div>
   </body>
 </html>
