@@ -9,8 +9,14 @@
         float: left;
         height: 100px;
       }
+      .clear-left::after {
+        clear: both;
+        overflow: auto;
+        display: table;
+        content: '';
+      }
       .clear-left {
-        clear: left;
+        border: 1px solid red;
       }
     </style>
   </head>
