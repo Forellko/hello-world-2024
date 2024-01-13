@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /*selects all <p> elements inside <div> elements*/
+      div p {
+        background-color: red;
+      }
+      /*selects all <p> elements that are children of a <div> element*/
+      div > p {
+        background-color: green;
+      }
+      /*selects the first <p> element that are placed immediately after <div> elements*/
+      div + p {
+        background-color: blue;
+      }
+      /*selects all <p> elements that are next siblings of <div> elements*/
+      div ~ p {
+        background-color: pink;
+      }
+    </style>
+    <title>Combinators</title>
+  </head>
+  <body></body>
+</html>
