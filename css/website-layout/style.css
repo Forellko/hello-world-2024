@@ -26,6 +26,13 @@ nav {
   color: white;
 }
 
+main {
+  width: 75%;
+}
+aside {
+  width: 22%;
+}
+
 .nav-links {
   width: 150px;
   display: flex;
@@ -35,13 +42,13 @@ nav {
 .main-block {
   display: flex;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .card,
 .card-first {
   background-color: #fff;
   border-radius: 5px;
-  width: 80%;
   padding: 20px;
   padding-bottom: 40px;
   display: flex;
@@ -72,4 +79,9 @@ nav {
 .text {
   margin-top: 20px;
   width: 90%;
+}
+
+.about-me {
+  background-color: #fff;
+  padding: 20px;
 }
