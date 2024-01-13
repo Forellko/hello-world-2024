@@ -65,8 +65,8 @@ aside {
 }
 
 .image {
-  width: 90%;
   height: 300px;
+  width: 300px;
   background-color: #a6a6a6;
   padding: 30px;
   margin-top: 30px;
@@ -129,5 +129,21 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  
+  .main-block {
+    flex-direction: column;
+  }
+
+  .card,
+  .card-first {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  aside {
+    margin-top: 20px;
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
 }
