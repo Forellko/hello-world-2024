@@ -84,4 +84,37 @@ aside {
 .about-me {
   background-color: #fff;
   padding: 20px;
+  border-radius: 5px;
+}
+
+.about-me-image {
+  width: 80%;
+  height: 100px;
+  padding: 20px;
+  background-color: #a6a6a6;
+}
+
+.about-me-text {
+  margin-top: 20px;
+}
+
+.popular-post {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.popular-post-image {
+  width: 80%;
+  height: 100px;
+  padding: 20px;
+  background-color: #a6a6a6;
+}
+
+.follow-me {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
