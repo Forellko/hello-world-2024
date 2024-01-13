@@ -8,6 +8,7 @@
       a {
         font-size: xx-large;
       }
+      /* with attribute */
       a[target='_blank'] {
         background-color: red;
       }
@@ -17,6 +18,10 @@
       [class|='attribute'] {
         color: white;
       }
+      /* start with */
+      [class^='top'] {
+        background-color: red;
+      }
     </style>
   </head>
   <body>
@@ -25,6 +30,7 @@
       target="_blank"
       >w3s</a
     >
-    <div class="attribute-all" title="all">123</div>
+    <div class="attribute-all" title="all qqq">123</div>
+    <div class="top attribute-2">222</div>
   </body>
 </html>
