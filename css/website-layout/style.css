@@ -2,6 +2,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-color: #e0ebeb;
 }
 
 header {
@@ -11,4 +14,56 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #141f1f;
+  color: white;
+}
+
+.nav-links {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-block {
+  display: flex;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.image {
+  width: 90%;
+  height: 300px;
+  background-color: #a6a6a6;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.text-title {
+  margin-top: 20px;
+}
+
+.text {
+  margin-top: 20px;
+  width: 90%;
 }
