@@ -37,14 +37,20 @@ nav {
   margin-top: 20px;
 }
 
-.card {
+.card,
+.card-first {
   background-color: #fff;
   border-radius: 5px;
   width: 80%;
   padding: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card {
+  margin-top: 20px;
 }
 
 .description {
