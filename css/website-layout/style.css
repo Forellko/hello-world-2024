@@ -35,18 +35,17 @@ aside {
 
 .nav-links {
   display: flex;
-  width: 100%;
+  width: 170px;
   justify-content: space-between;
 }
 .link {
   padding: 10px 0;
-  display: block;
-  width: 100%;
-  text-align: center;
 }
 
 .link:hover {
   background-color: #d9d9d9;
+  color: #333333;
+  cursor: pointer;
 }
 
 .main-block {
@@ -167,5 +166,11 @@ footer {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    width: 100%;
+  }
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
