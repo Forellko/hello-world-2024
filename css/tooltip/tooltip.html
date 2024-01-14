@@ -24,6 +24,13 @@
         top: -5px;
         left: 105%;
       }
+
+      .tooltip-left-position {
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+      }
       .tooltip:hover .tooltiptext {
         visibility: visible;
       }
@@ -33,6 +40,11 @@
     <div class="tooltip">
       Right
       <span class="tooltiptext tooltip-right-position">Tooltip Text</span>
+    </div>
+
+    <div class="tooltip">
+      Right
+      <span class="tooltiptext tooltip-left-position">Tooltip Text</span>
     </div>
   </body>
 </html>
