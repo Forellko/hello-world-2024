@@ -1,0 +1,76 @@
+@keyframes move-block {
+  0% {
+    top: 10vh;
+    left: 10vw;
+    background-color: red;
+    transform: rotate(0deg);
+  }
+  25% {
+    top: 10vh;
+    left: 90vw;
+    background-color: green;
+    transform: rotate(90deg);
+  }
+  50% {
+    top: 80vh;
+    left: 90vw;
+    background-color: blue;
+    transform: rotate(180deg);
+  }
+  75% {
+    top: 80vh;
+    left: 10vw;
+    background-color: yellow;
+    transform: rotate(270deg);
+  }
+  100% {
+    top: 10vh;
+    left: 10vw;
+    background-color: red;
+    transform: rotate(360deg);
+  }
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move-block;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.block1 {
+  animation-duration: 5s;
+}
+
+.block2 {
+  animation-duration: 10s;
+}
+
+.block3 {
+  animation-duration: 20s;
+}
+
+.block4 {
+  animation-duration: 40s;
+}
+
+.block5 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+}
+
+.block6 {
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+.block7 {
+  animation-duration: 20s;
+  animation-direction: reverse;
+}
+.block8 {
+  animation-duration: 40s;
+  animation-direction: reverse;
+}
