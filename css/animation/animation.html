@@ -15,16 +15,36 @@ animation -->
     <title>Animation</title>
     <style>
       @keyframes example {
-        from {
+        0% {
           background-color: red;
+          left: 0px;
+          top: 0px;
         }
-        to {
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          left: 200px;
+          top: 200px;
           background-color: blue;
+        }
+        75% {
+          left: 0px;
+          top: 200px;
+          background-color: green;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          background-color: red;
         }
       }
       .block {
         width: 100px;
         height: 100px;
+        position: relative;
         background-color: red;
         animation-name: example;
         animation-duration: 5s;
