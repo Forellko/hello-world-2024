@@ -31,6 +31,23 @@
         top: -5px;
         right: 105%;
       }
+
+      .tooltip-top-position {
+        position: absolute;
+        width: 120px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+      }
+
+      .tooltip-bottom-position {
+        position: absolute;
+        width: 120px;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+      }
+
       .tooltip:hover .tooltiptext {
         visibility: visible;
       }
@@ -43,8 +60,18 @@
     </div>
 
     <div class="tooltip">
-      Right
+      Left
       <span class="tooltiptext tooltip-left-position">Tooltip Text</span>
+    </div>
+
+    <div class="tooltip">
+      Top
+      <span class="tooltiptext tooltip-top-position">Tooltip Text</span>
+    </div>
+
+    <div class="tooltip">
+      Bottom
+      <span class="tooltiptext tooltip-bottom-position">Tooltip Text</span>
     </div>
   </body>
 </html>
