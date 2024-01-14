@@ -9,12 +9,14 @@
         width: 100px;
         height: 100px;
         background-color: red;
-        transition: width 2s, height 4s;
+        transition: width 2s, height 4s, transform 5s;
         transition-delay: 1s;
+        box-shadow: 2px 2px 5px black;
       }
       .block:hover {
         width: 200px;
         height: 300px;
+        transform: rotateX(360deg) rotateY(90deg);
       }
     </style>
   </head>
