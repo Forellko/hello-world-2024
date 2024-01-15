@@ -1,4 +1,5 @@
 /* ? */
+/* It prevents parent elements from collapsing when they contain floated elements. */
 .row::after {
   content: '';
   clear: both;
