@@ -36,16 +36,13 @@ body {
   padding: 15px;
 }
 
-.equal {
-  grid-column: 3 / 5;
-}
-
 .num {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid green;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .operator {
@@ -54,4 +51,5 @@ body {
   align-items: center;
   border: 1px solid green;
   border-radius: 10px;
+  cursor: pointer;
 }
