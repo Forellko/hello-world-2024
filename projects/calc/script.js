@@ -87,6 +87,9 @@ equal.onclick = () => {
         break;
     }
     input.innerHTML = result;
+    a = +result;
+    b = 0;
+    order = 1;
   }
 };
 
