@@ -1,0 +1,17 @@
+@keyframes falldown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: falldown;
+  animation-duration: 5s;
+}
