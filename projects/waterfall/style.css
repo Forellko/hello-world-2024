@@ -6,12 +6,38 @@
     top: 100vh;
   }
 }
+@keyframes fallright {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+@keyframes fallup {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@keyframes fallleft {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100vw;
+  }
+}
 
 .block {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: red;
-  animation-name: falldown;
-  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
