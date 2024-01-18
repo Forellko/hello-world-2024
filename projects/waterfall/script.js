@@ -1,18 +1,4 @@
 const main = document.querySelector('#main');
-const colors = [
-  'red',
-  'green',
-  'blue',
-  'yellow',
-  'pink',
-  '#FF1493',
-  '#2F4F4F',
-  '#4B0082',
-  '#F08080',
-  '#7B68EE',
-  '#FF4500',
-  '#98FB98',
-];
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
