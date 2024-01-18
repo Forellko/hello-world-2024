@@ -2,6 +2,7 @@ const createBlock = document.querySelector('#create-block-button');
 const block = document.querySelector('#block');
 let newBlock = null;
 let currentBlock = null;
+let currentColor = 'red';
 
 const dragstartHandler = (ev) => {
   console.log(ev.target.id);
@@ -29,7 +30,7 @@ createBlock.onclick = () => {
   newBlock.ondragstart = dragstartHandler;
   newBlock.style.width = newBlock.style.width = 100 + 'px';
   newBlock.style.height = 100 + 'px';
-  newBlock.style.backgroundColor = 'red';
+  newBlock.style.backgroundColor = currentColor;
   block.appendChild(newBlock);
   currentBlock = newBlock;
 };
@@ -43,4 +44,5 @@ gridTargets.map((element) => {
 const color = document.querySelector('#color');
 color.oninput = (event) => {
   currentBlock.style.backgroundColor = event.target.value;
+  currentColor = event.target.value;
 };
