@@ -6,3 +6,4 @@ console.log(
     return element === 2;
   })
 );
+console.log(arr.findIndex((element) => element === 4));
