@@ -22,6 +22,7 @@ function dropHandler(ev) {
 
 createBlock.onclick = () => {
   newBlock = document.createElement('div');
+  newBlock.style.position = 'absolute';
   newBlock.id = Math.random();
   newBlock.draggable = true;
   newBlock.ondragstart = dragstartHandler;
