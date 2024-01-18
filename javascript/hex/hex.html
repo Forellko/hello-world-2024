@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex</title>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script>
+      const main = document.querySelector('#main');
+      let a = Math.round(Math.random() * 255).toString(16);
+      let b = Math.round(Math.random() * 255).toString(16);
+      let c = Math.round(Math.random() * 255).toString(16);
+      if (a.length < 2) {
+        a = '0' + a;
+      }
+      if (b.length < 2) {
+        b = '0' + b;
+      }
+      if (c.length < 2) {
+        c += '0' + a;
+      }
+      console.log(a, b, c);
+      main.innerHTML = '#' + a + b + c;
+      main.style.backgroundColor = main.innerHTML;
+    </script>
+  </body>
+</html>
