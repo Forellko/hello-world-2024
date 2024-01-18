@@ -16,8 +16,9 @@ setInterval(() => {
     block.style.width = Math.floor(Math.random() * 500 + 100) + 'px';
     block.style.height = Math.floor(Math.random() * 500 + 100) + 'px';
     block.style.backgroundColor = getRandomColor();
+    block.style.opacity = Math.random();
     block.style.animationName = direction[Math.round(Math.random() * 3)];
-    block.style.animationDuration = Math.random() * 5 + 1 + 's';
+    block.style.animationDuration = Math.random() * 3 + 1 + 's';
     if (block.style.animationName === 'falldown') {
       block.style.left = Math.round(Math.random() * 100) + 'vw';
     }
