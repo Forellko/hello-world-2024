@@ -8,6 +8,7 @@ const isEvery = array.every((el) => el < 5);
 const isSome = array.some((el) => el === 3);
 
 // For each method
-array.forEach((el) => {
-  console.log(el);
-});
+array.forEach((el) => 0);
+
+// Array map method
+const map = array.map((el) => el + el);
