@@ -6,3 +6,8 @@ const isEvery = array.every((el) => el < 5);
 
 // True if one element is = 3
 const isSome = array.some((el) => el === 3);
+
+// For each method
+array.forEach((el) => {
+  console.log(el);
+});
