@@ -15,3 +15,6 @@ const map = array.map((el) => el + el);
 
 // Array filter method
 const filter = array.filter((el) => el > 2);
+
+// Array reduce method
+const reduce = array.reduce((acc, el) => (acc += el));
