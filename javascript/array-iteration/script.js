@@ -21,3 +21,6 @@ const reduce = array.reduce((acc, el) => (acc += el));
 
 // Array from method
 const from = Array.from('12345');
+
+// Spread operator
+const spread = [...map, ...filter];
