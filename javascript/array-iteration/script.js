@@ -12,3 +12,6 @@ array.forEach((el) => 0);
 
 // Array map method
 const map = array.map((el) => el + el);
+
+// Array filter method
+const filter = array.filter((el) => el > 2);
