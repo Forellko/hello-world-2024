@@ -18,3 +18,6 @@ const filter = array.filter((el) => el > 2);
 
 // Array reduce method
 const reduce = array.reduce((acc, el) => (acc += el));
+
+// Array from method
+const from = Array.from('12345');
