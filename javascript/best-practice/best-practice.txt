@@ -1,0 +1,1 @@
+Avoid global variables, avoid new, avoid ==, avoid eval()
