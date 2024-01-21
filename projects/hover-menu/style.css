@@ -1,0 +1,37 @@
+@keyframes menu-hover {
+  0% {
+    display: none;
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes menu-out {
+  0% {
+    top: 50px;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.menu-content-hover {
+  position: relative;
+  animation: menu-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu-content-out {
+  position: relative;
+  animation: menu-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
