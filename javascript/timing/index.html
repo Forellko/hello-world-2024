@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing</title>
+  </head>
+  <div id="time"></div>
+  <div id="start">start</div>
+  <div id="stop">stop</div>
+  <body>
+    <script>
+      const time = document.getElementById('time');
+      const startInterval = document.getElementById('start');
+      const stopInterval = document.getElementById('stop');
+      let interval = null;
+
+      startInterval.onclick = () => {
+        if (!interval) {
+          interval = setInterval(() => {
+            time.innerHTML = new Date();
+          }, 1000);
+        }
+      };
+      stopInterval.onclick = () => {
+        clearInterval(interval);
+        interval = null;
+      };
+    </script>
+  </body>
+</html>
